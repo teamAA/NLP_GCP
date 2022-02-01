@@ -3,3 +3,4 @@ pandas==1.1.5
 numpy==1.19.5
 dvc==2.8.1
 dvc[gdrive]==2.8.1
+pydrive2
