@@ -14,8 +14,9 @@ nltk.download('omw-1.4')
 nltk.download('punkt')
 
 def load_data():
-    dvc_train = dvc.api.read('data-registry/train.csv', repo='../')
-    train = pd.read_csv(StringIO(dvc_train) )
+    # dvc_train = dvc.api.read('data-registry/train.csv', repo='../')
+    # train = pd.read_csv(StringIO(dvc_train) )
+    train = pd.read_csv(dvc.api.get_url('data_model/train.csv'))
     train['dataset'] = 'train'
     return df
 
