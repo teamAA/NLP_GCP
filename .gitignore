@@ -129,4 +129,6 @@ dmypy.json
 .pyre/
 
 
-data_model/
+# data_model/
+
+src/credentials.json
