@@ -12,4 +12,4 @@ ADD requirements.txt /app/
 RUN pip install -r requirements.txt
 
 ADD . /app
-ENTRYPOINT [ "streamlit", "run", "main2.py", "--server.port", "8080" ]
+CMD streamlit run app.py --server.port=8080 --browser.serverAddress="0.0.0.0"
