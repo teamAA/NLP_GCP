@@ -1,6 +1,2 @@
-runtime: python
+runtime: custom
 env: flex
-entrypoint: streamlit run main2.py
-
-runtime_config:
-  python_version: 3.7
